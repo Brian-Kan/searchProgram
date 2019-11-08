@@ -1,13 +1,37 @@
-// document.querySelector(selectors).match;
+// MVP
+// get the value of the input
+// onClick get the value of the input
 
 
+// STRETCH GOAL
+// Error handling for 'no matches' and blanks/spaces
+// Go through the results of the array and give the word a background of yellow and text a color of dodgerBlue
 
-let textRetrieval1 = document.getElementsByTagName("article")
-let textRetrieval2 = document.getElementsByTagName("article")[0]
-let textRetrieval3 = document.getElementsByTagName("article")[0].children
-let textRetrieval4 = document.getElementsByTagName("article")[0].innerText
 
-console.log(textRetrieval1)
-console.log(textRetrieval2)
-console.log(textRetrieval3)
-console.log(textRetrieval4)
+// This gets the article element and converts it into a string for ease of searching.
+const textRetrieval = document.getElementsByTagName("article")[0].innerText
+
+// This grabs the user search criteria.
+document.getElementById("userSubmit").onclick = function(e) {
+    e.preventDefault()
+
+    let inputText = document.getElementById("searchCriteria")
+
+    if(inputText.value === ""){
+        alert("Please input a search criteria");
+    } else {
+        wordSearch(inputText.value)
+    }    
+}
+
+// This matches the user search criteria and matches it against every word in the document.
+// Each match is a value in a single array
+const wordSearch = function (userInput) {
+    const matchedWord = [...textRetrieval.matchAll(userInput)]
+    if (matchedWord.length == 0){
+        alert("No matches found")
+    } else {
+        console.log(matchedWord)
+    }
+}
+
