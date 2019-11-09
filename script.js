@@ -1,10 +1,10 @@
 // MVP
 // get the value of the input
 // onClick get the value of the input
+// Error handling for 'no matches' and blanks/spaces
 
 
 // STRETCH GOAL
-// Error handling for 'no matches' and blanks/spaces
 // Go through the results of the array and give the word a background of yellow and text a color of dodgerBlue
 
 
@@ -31,7 +31,9 @@ const wordSearch = function (userInput) {
     if (matchedWord.length == 0){
         alert("No matches found")
     } else {
+        
         console.log(matchedWord)
     }
 }
+
 
