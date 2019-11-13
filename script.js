@@ -27,17 +27,18 @@ const searchedWords = {}
 
 // This gets the article element and converts it into a string for ease of searching.
 const textRetrieval = document.getElementsByTagName("article")[0].innerText
-let inputText = document.getElementById("searchCriteria")
+const inputText = document.getElementById("searchCriteria")
 
 // This grabs the user search criteria.
 document.getElementById("userSubmit").onclick = function(e) {
-    e.preventDefault()
+    e.preventDefault()   
 
     if(inputText.value === ""){
         alert("Please input a search criteria");
+        
     } else {
-        wordSearch(inputText.value)
-        textHighlight(inputText.value)
+        wordSearch(inputText)
+        textHighlight(textRetrieval, inputText.value)        
     }
 }
 
@@ -49,11 +50,14 @@ const wordSearch = function (userInput) {
     if (matchedWord.length == 0){
         alert("No matches found")
     } else {        
-        console.log(matchedWord)
-        textHighlight(textRetrieval, inputText)
+        // console.log("Matched word",matchedWord)
+        // textHighlight(textRetrieval, inputText)
+        console.log("Match found")
     }
 }
 
+
+// This function is to highlight ALL instances of the search criteria
 const textHighlight = function (entireText, specificWord) {
     // [...textRetrieval.matchAll(userInput)].style.color = "red"
     // this won't work because it is targeting the item in the array instead of the DOM instead.
@@ -63,6 +67,7 @@ const textHighlight = function (entireText, specificWord) {
     // console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in the sentence`);
 
     console.log(entireText.includes(specificWord))
+    console.log(`The word "${specificWord}" ${entireText.includes(specificWord) ? 'is' : 'is not'} in the sentence`)
 
 }
 
