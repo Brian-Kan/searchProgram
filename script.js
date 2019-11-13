@@ -66,33 +66,3 @@ const textHighlight = function (entireText, specificWord) {
 
 }
 
-
-
-// JON'S VERSION
-
-
-document.querySelector('.container').insertAdjacentHTML('beforeend', <p>${markup.join('')}</p>);
-const markup = textRetrieval.split(" ").map(word => word.includes(state.searchedWord) ? <span class="highlight">${word}</span> : word).join('');
-
-
-document.querySelector('.container').insertAdjacentHTML('beforeend', <p>${markup}</p>);
-
-
-
-
-//innerHTML when rendering
-//substring
-
-// ==========================================================
-
-
-// Get the article. Before the end of the element add the p tags.
-document.getElementsByTagName("article").insertAdjacentHTML('beforeend', <p>${markup.join('')}</p>)
-
-
-// variable markup will grab the entire article which is in the form of a string.
-// it will seperate the words based on " "
-const markup = textRetrieval.split(" ").map(word => word.includes(state.searchedWord) ? <span class="highlight">${word}</span> : word).join('')
-
-document.getElementsByTagName("article").insertAdjacentHTML('beforeend', <p>${markup}</p>)
-
