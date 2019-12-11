@@ -1,0 +1,74 @@
+script.js:70 Searched word: ghost
+script.js:71 Searched word index [0]: g
+script.js:72 Searched word index [0] length: 1
+script.js:73 Searched word length: 5
+script.js:74 Article index[383]: g
+script.js:76 The article includes the specific search word: true
+[...textRetrieval.matchAll(userInput)]
+VM931:1 Uncaught ReferenceError: userInput is not defined
+    at <anonymous>:1:28
+(anonymous) @ VM931:1
+[...textRetrieval.matchAll(ghost)]
+VM976:1 Uncaught ReferenceError: ghost is not defined
+    at <anonymous>:1:28
+(anonymous) @ VM976:1
+[...textRetrieval.matchAll('ghost')]
+(20) [Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1)]0: Array(1)0: "ghost"groups: undefinedindex: 383input: "Vanishing act: Ghosting moves from the dating world to the job market↵In this hot labour market, some workers aren't showing up for interviews or even their first day on the job↵↵Canada's hot job is proving a challenge for employers and recruiters alike, as finding staff has become an increasingly difficult task in some sectors.↵↵In fact, some workers have adopted the practice of ghosting, usually used to sever social ties with someone without any explanation, to manage their careers.↵↵"I can book appointments for five people to come and have an interview and out of those five, three could be no-shows," said Cathline James of Wise Bites, a snack-maker in Richmond B.C.↵↵James employs 10 people to make bars, cookies and muffins free of the most common food allergens like dairy, nuts and wheat.↵↵Already stocked in more than 400 stores across Canada, James says the demand for allergen-free products is making it hard to keep up with a growing list of orders.↵↵She urgently needs a production supervisor so she can spend less time baking and more time on business. She also needs to hire another two workers as soon as possible, and predicts she'll need even more help in January.↵↵Her job ads online haven't been a recipe for success. In addition to the no-show candidates who don't return calls or messages, James has been ghosted in an even more mysterious way.↵↵Twice she's had candidates come in for a trial shift and be paid the same day. Both workers performed well, claimed they liked the job and would return the next morning.↵↵Then they vanished.↵↵"No call, no reason," James said. "So you're wondering what happened."↵↵Ghost stories coming from office towers, too↵↵James isn't the only person wondering what's up with job candidates who disappear.↵↵Workplace ghosting is happening in cities across North America.↵↵It's been noticed by the economists at the U.S Federal Reserve, and been covered by business school podcasts, NPR, the Wall Street Journal, Fast Company and others.↵↵In the information technology world, ghosting can be especially acute for companies trying to fill specialized technical roles.↵↵According to multiple recruitment firms contacted by CBC News, the problem has increased over the past 12 to 18 months and is also being seen for positions in accounting, financial services, insurance, law, marketing and sales.↵↵"It's exponentially increased," said Mark Rouse, a partner at Toronto-based recruitment firm IQ Partners. "We believe we're in what's called the candidates' market right now. Where there's a high demand for qualified people, and a limited supply."↵↵Throughout 2019, numbers from Statistics Canada have confirmed the country is facing a labour shortage. A recent report highlighted that the employment rate is growing nearly twice as fast as the overall economy.↵↵One recruiting firm told CBC that for some jobs, about 20 to 25 per cent of candidates could drop out of an active hiring process without explanation, even after receiving a verbal offer of employment.↵↵A pricey problem↵↵As Rouse explains, when a candidate ghosts out of the interview process or doesn't show up for work, it costs both the recruiter and the employer time and money.↵↵"It's a massive, massive inconvenience to us," he said.↵↵The disappearance of a promising prospect can also take another toll on those doing the hiring.↵↵"People get, you know, invested in a number of ways," he said. "Emotionally, not the least of it."↵↵The emotional sting comes with a kind of embarrassment. Few employers are willing to admit being ghosted, because it could hurt their reputation.↵↵Companies that are seen as so-called destination employers, such as Amazon, Apple, Disney, Ernst and Young, Johnson & Johnson, Nike and Siemens, all have plenty of candidates willing to work for them.↵↵Lesser-known companies are less of a draw. That makes them extremely protective of their "employment brand," Rouse said.↵↵If candidates are dropping out of the interview process, a company that may have spent years building an employment brand is left "worrying about what might happen to it," he said.↵↵Who are the ghosts and why do they do it?↵↵While there's no hard data on ghosting, recruiters in Calgary, Toronto and Montreal contacted by CBC News indicated that candidates who ghost most often tend to be younger workers in the first five to 10 years of their career.↵↵For Katie Dolgin, the co-founder of Toronto recruitment firm Found People Inc., ghosting has increased from a rare occurrence a few years ago to something that affects 15 to 20 per cent of client job postings.↵↵Candidates, especially in technology, feel like they're wanted, they're hot commodities and they can just do that.↵↵"Candidates, especially in technology, feel like they're wanted, they're hot commodities and they can just do that," she said.↵↵Several recruiters told CBC that strong candidates may get multiple offers, which some will leverage against each other, and leave would-be employers dangling with no response.↵↵While some recruiters think people who ghost don't reply because they feel awkward about communicating bad news or rejecting an offer, Dolgin disagrees.↵↵She sees a sense of entitlement among "ghosters."↵↵In her view, some young workers believe they should be advancing very quickly, and so they job hop for promotions they feel they deserve.↵↵While that's not a new motivation to change jobs, with companies desperate to fill positions in today's job market, Dolgin believes there's so much opportunity that the people who ghost feel no need to be transparent or considerate.↵↵What goes around comes around↵↵For companies and recruiters to complain about being ghosted by job-seekers is a bit rich for some people.↵↵"This is something that employers have done for a long time" said Kate Rowbotham, a professor with the Smith School of Business at Queen's University.↵↵"Not getting feedback from interviews, not responding to applications, you know, doing things like that, like just no contact."↵↵Rowbotham believes all parties should treat each other with respect in the hiring process, and that the criticism of individuals who ghost employers is a double standard.↵↵Her take is some of that criticism could reflect corporate unease with the increasing power of workers in a strong job market.↵↵However, she agrees with recruiters who say ghosting is a risky behaviour that could come back to haunt job-seekers in the future.↵↵For example, Dolgin had a candidate who ghosted one job posting, only to get back in touch to express interest in another. The recruiter shot back a ghost-busting "you're off my list" reply.↵↵There's also the classic big city/small world reality of the business community in many parts of Canada to consider.↵↵"The person you're ghosting today could end up at your company," Rouse said. "Or five years from now, they could be at a company where you want a job, but they will remember."↵↵Canada's labour shortage is severe enough that some companies trying to expand are buying smaller businesses, in part to get the staff.↵↵For those companies trying to attract new workers and worried about being ghosted, recruiters recommend streamlining the hiring process to as few steps as possible and making sure the salary you offer is competitive in your market.↵↵Back in Richmond, B.C., Cathline James has taken those steps.↵↵Wise Bites has also turned to an agency to help find the production supervisor the company has needed for almost a year.↵↵James is hopeful it will work.↵↵"For us, that's a really big deal.""length: 1__proto__: Array(0)1: ["ghost", index: 1333, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]2: ["ghost", index: 1778, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]3: ["ghost", index: 2036, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]4: ["ghost", index: 3077, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]5: ["ghost", index: 3555, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]6: ["ghost", index: 4123, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]7: ["ghost", index: 4184, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]8: ["ghost", index: 4290, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]9: ["ghost", index: 4462, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]10: ["ghost", index: 5054, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]11: ["ghost", index: 5208, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]12: ["ghost", index: 5539, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]13: ["ghost", index: 5677, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]14: ["ghost", index: 6146, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]15: ["ghost", index: 6357, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]16: ["ghost", index: 6485, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]17: ["ghost", index: 6594, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]18: ["ghost", index: 6774, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]19: ["ghost", index: 7143, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]length: 20__proto__: Array(0)
+[...textRetrieval.matchAll('ghost')][0]
+["ghost", index: 383, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]
+[...textRetrieval.matchAll('ghost')][0][0]
+"ghost"
+[...textRetrieval.matchAll('ghost')][0][1]
+undefined
+[...textRetrieval.matchAll('ghost')][0]
+["ghost", index: 383, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]
+[...textRetrieval.matchAll('ghost')][0].index
+383
+textRetrieval[[...textRetrieval.matchAll('ghost')][0].index]
+"g"
+textRetrieval([...textRetrieval.matchAll('ghost')][0].index, [...textRetrieval.matchAll('ghost')][0].index+'ghost'.length)
+VM1216:1 Uncaught TypeError: textRetrieval is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM1216:1
+textRetrieval.slice([...textRetrieval.matchAll('ghost')][0].index, [...textRetrieval.matchAll('ghost')][0].index+'ghost'.length)
+"ghost"
+textRetrieval.slice([...textRetrieval.matchAll('ghost')][0].index, [...textRetrieval.matchAll('ghost')][0].index+'ghost'.length+50)
+"ghosting, usually used to sever social ties with someon"
+const matches = ...textRetrieval.matchAll('ghost')
+VM1259:1 Uncaught SyntaxError: Unexpected token '...'
+const matches = textRetrieval.matchAll('ghost')
+undefined
+[...[1,2,3]]
+(3) [1, 2, 3]
+[...[1,2,3]] === [1,2,3\
+VM1324:1 Uncaught SyntaxError: Invalid or unexpected token
+[...[1,2,3]] === [1,2,3]
+false
+const matches = textRetrieval.matchAll('ghost')
+VM1354:1 Uncaught SyntaxError: Identifier 'matches' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM1354:1
+matches
+RegExpStringIterator {}__proto__: RegExp String Iterator
+const matches2 = [...textRetrieval.matchAll('ghost')]
+undefined
+matches2
+(20) [Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1), Array(1)]
+const firstMatch = matches2[0];
+undefined
+"abcdefg".slice(1,4)
+"bcd"
+"abcdefg".substr(1,4)
+"bcde"
+textRetrieval.slice(firstMatch.index, firstMatch.index + 'ghost'.length)
+"ghost"
+textRetrieval.slice(firstMatch.index, firstMatch.index + 'ghost'.length + 50)
+"ghosting, usually used to sever social ties with someon"
+firstMatch
+["ghost", index: 383, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]
+matches[12]
+undefined
+matches[5]
+undefined
+matches2[5]
+["ghost", index: 3555, input: "Vanishing act: Ghosting moves from the dating worl…t will work.↵↵"For us, that's a really big deal."", groups: undefined]

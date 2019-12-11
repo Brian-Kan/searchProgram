@@ -17,11 +17,12 @@
 // ***** NOTE TO SELF *****
 //====================================================================================================
 
-// <!-- Search Field -->
-// <input type="text" id="searchCriteria">
+// inputText only grabs the word in the search bar.  Below at inputText.value the value is grabed.
+// the wordSearch function matches the inputText.value against all instances of that word in the article.
+// There is a difference between the word in the article (DOM) vs the word in the array that matchAll puts it into. 
+// PROBLEM: As the word is found in the DOM i need the color to change to dodger blue and the background-color to turn yellow
 
-// <!-- Button -->
-// <input type="submit" id="userSubmit">
+// how to create a dom element.  Regardless, something in the dom needs to be targeted (GET).  From there we can crawl through and be as specfic as necessary.
 
 // ====================================================================================================
 
@@ -31,64 +32,36 @@ const searchedWords = {}
 // This gets the article element and converts it into a string for ease of searching.
 // const textRetrieval = document.getElementsByTagName("article")[0].innerText
 const textRetrieval = document.getElementsByTagName("article")[0].innerHTML
+const inputText = document.getElementById("searchCriteria")
 
 // This grabs the user search criteria.
 document.getElementById("userSubmit").onclick = function(e) {
     e.preventDefault()   
-    const inputText = document.getElementById("searchCriteria")
-    const inputValue = inputText.value
-    console.log("This is the inputValue:", inputValue)
-    console.log("This is the inputValue's length:", inputValue.length)
-    
-    // Error handling for empty searches
-    if(inputValue === ""){
-        alert("Please input a search criteria");        
-    } else {
-        wordSearch(inputValue)  
-    }
-}
 
-// This function finds all the instances of the user word and puts them into an array.
-const matchedWord = function(input) {
-    const matchesArray = [...textRetrieval.matchAll(input)]
-    return matchesArray
+    if(inputText.value === ""){
+        alert("Please input a search criteria");
+        
+    } else {
+        wordSearch(inputText.value)  
+    }
 }
 
 // wordSearch is a function that takes the article, spreads it into an array and matches each instance to the userInput
 // Each match is a value in a new, single array
 // Currently it seems to be acting as an error handler
 const wordSearch = function (userInput) {
-    const inputText = document.getElementById("searchCriteria")
-    const inputValue = inputText.value
 
     // How exactly does matchedWord work?
-    matchedWord(userInput)
+    const matchedWord = [...textRetrieval.matchAll(userInput)]
     console.log("matchedWord result:", matchedWord)
     if (matchedWord.length == 0){
         alert("No matches found")
-    } else {
-        textHighlight(textRetrieval, inputValue)
+    } else {        
+        textHighlight(textRetrieval, inputText.value)
         // console.log(matchedWord)
-        
+        // textHighlight(textRetrieval, matchedWord)
     }
 }
-
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Here I need to break down the components to more simpler tasks.
-// So far:
-// - Retrieved the word.
-// - to find ALL the words (target them).
-// - store all the words.
-// - Error handled blank and 'no matches.'
-
-// The next part has:
-// -- style the words.
-// -- separate the words from before and after.
-// -- style the searched words / also clear the selection with each new search
-// -- stitch everything back together.
-// -- re-insert it back into the article with the stylings.
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 
 // This function is to highlight ALL instances of the search criteria
@@ -108,15 +81,16 @@ const textHighlight = function (entireText, specificWord) {
 
     console.log("The article includes the specific search word:", entireText.includes(specificWord))
     // console.log(`The word "${specificWord}" ${entireText.includes(specificWord) ? 'is' : 'is not'} in the sentence`)
-    
-}
 
-    // // This portion is to re-add the word with the stylings back into the article.
-    // const markup = textRetrieval.split(" ").map(word => word.includes(specificWord) ? `<span class="highlight">${word}</span>` : word).join(' ')
+
+    // This portion is to re-add the word with the stylings back into the article.
+    const markup = textRetrieval.split(" ").map(word => word.includes(specificWord) ? `<span class="highlight">${word}</span>` : word).join(' ')
     
-    // document.querySelector('article').insertAdjacentHTML('beforeend', `<p>${markup}</p>`)
+    document.querySelector('article').insertAdjacentHTML('beforeend', `<p>${markup}</p>`)
     // const test = document.querySelector('article')
     // console.log(test)
+
+}
 
 
 // Methods to review: 

@@ -7,3 +7,8 @@ article {
     max-width: 900px;
     margin: 0 auto;
 }
+
+.highlight {
+    color: dodgerblue;
+    background-color: yellow;
+}

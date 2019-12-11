@@ -1,0 +1,55 @@
+I finally got another chance to review your code.  And I have questions.
+
+In the line below, ".container" is what exactly?  I know you don't have access to my markup and all but I was trying to figure this out.
+
+You're going through the dom and selecting something with the class of container.  Before the end of this element we are inserting a <p> with the markup joined by spaces.
+
+document.querySelector('.container').insertAdjacentHTML('beforeend', <p>${markup.join('')}</p>);
+
+
+
+
+In the line below you're going through the article itself and splitting it by word.  
+
+You are using a ternary operator so that IF the word matches the search word (via includes) is true you add the word with spans around it ELSE join the words together seperated by a space?
+
+const markup = textRetrieval.split(" ").map(word => word.includes(state.searchedWord) ? <span class="highlight">${word}</span> : (word).join('');
+
+document.querySelector('.container').insertAdjacentHTML('beforeend', <p>${markup}</p>);
+last two lines
+so you'd have an array with ["Hi", "my", "<span class="highlight">name</span>"]
+if your search term was "name"
+
+
+
+which turns it into "Hi my <span class="highlight">name</span>" when you join
+SO WHEN YOU RENDER IT AS MARKUP
+you get that highlight
+in the HTML
+
+
+At which point did we put all the words into an array?  From what I can tell (using methods like 'includes') ALL the words in the article have to be in an array.
+
+
+
+========================================================================
+
+
+should be
+
+document.querySelector('.container').insertAdjacentHTML('beforeend', <p>${markup.join('')}</p>);
+const markup = textRetrieval.split(" ").map(word => word.includes(state.searchedWord) ? <span class="highlight">${word}</span> : (word).join('');
+document.querySelector('.container').insertAdjacentHTML('beforeend', <p>${markup}</p>);
+
+THERE
+
+
+
+
+last two lines
+so you'd have an array with ["Hi", "my", "<span class="highlight">name</span>"]
+if your search term was name
+which turns it into "Hi my <span class="highlight">name</span>" when you join
+SO WHEN YOU RENDER IT AS MARKUP
+you get that highlight
+in the HTML
