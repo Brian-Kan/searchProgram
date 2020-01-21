@@ -73,6 +73,51 @@ const wordSearch = function (userInput) {
     }
 }
 
+// Here, each instance of the iterable must be stored or be able to be called upon for manipulation
+
+// This line of code gets the start of the article to the index[227]
+const stringManipulation = function () {
+    const substringEnd = matchedWord('nada')[0].index
+
+    // This portion gets everything from the beginning of the article to the start of the searched word.  First instance only.
+    console.log(`${textRetrieval.substring(0,substringEnd)}`)
+    
+    // this grabs the first instance of the match.  NOTE: when the matchedWord function is fired, it creates an ITERABLE containing all the found instances of the search.
+    console.log(`${[...textRetrieval.matchAll("nada")][0]}`)
+
+    // The rest of the article AFTER the first instance of the searched word
+    console.log(`${textRetrieval.substring(substringEnd+document.getElementById("searchCriteria").value.length)}`)    
+
+    // Complete version
+    // console.log(`${textRetrieval.substring(0,substringEnd)}${[...textRetrieval.matchAll("nada")][0]}${textRetrieval.substring(substringEnd+document.getElementById("searchCriteria").value.length)}`)
+
+}
+
+const wordStart = function() {
+    
+}
+
+const wordEnd = function() {
+
+}
+
+const preText = function() {
+    const input = (document.getElementById("searchCriteria")).value
+    const preTextEnd = matchedWord(input)[0].index
+    // This portion gets everything from the beginning of the article to the start of the searched word.  First instance only.
+    console.log(`${textRetrieval.substring(0,preTextEnd)}`)
+}
+
+const midText = function() {
+
+}
+
+const postText = function() {
+
+}
+
+
+
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Here I need to break down the components to more simpler tasks.
 // So far:
@@ -118,12 +163,5 @@ const textHighlight = function (entireText, specificWord) {
     // const test = document.querySelector('article')
     // console.log(test)
 
-
-// Methods to review: 
-
-// innerHTML
-// subString
-// .index
-// .join and .split
 
 
