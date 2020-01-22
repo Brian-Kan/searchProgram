@@ -89,7 +89,6 @@ const textHighlight = function (entireText, specificWord) {
     document.querySelector('article').insertAdjacentHTML('beforeend', `<p>${markup}</p>`)
     // const test = document.querySelector('article')
     // console.log(test)
-
 }
 
 
