@@ -18,7 +18,7 @@
 const wordSearchContainer = {}
 
 // Get the article
-const getArticle = document.getElementsByTagName('article')[0].innerText
+const getArticle = document.getElementsByTagName('article')[0].innerHTML
 
 // Get the user input
 const userInput = document.getElementById("searchCriteria").value
@@ -90,21 +90,26 @@ while (midCount < findMatch.length) {
     midCount++
 }
 
+// console.log("postText", postText)
 
 // Get the finalText.  This is the text from the end of the last match to the end of the article.
 // console.log("finalText test:", getArticle.substring(wordEnd[wordEnd.length - 1]))
 
 
 // Render the text.  Here, the preText and postText are assembled and updates the DOM
-renderCount = 0
-while(renderCount< findMatch.length) {
-    "render the pretext"
-    "stitch all the post text together"
-    postText.join(" ")
-    // consider .join
-    renderCount++
-}
+// renderCount = 0
+// endText = []
+// while(renderCount < findMatch.length) {
+//     "render the pretext"
+//     "stitch all the post text together"
+    
+//     // consider .join
+//     endText.push(postText.join(""))
+//     renderCount++
+// }
 
-
+// console.log("FINAL OUTCOME:", preText + endText[0])
+// document.querySelector('article').insertAdjacentHTML('beforeend', preText + endText[0])
+document.querySelector('article').innerHTML = (preText + postText.join(""))
 
 // Utilize RegEx for further search refinement
