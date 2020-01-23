@@ -21,7 +21,11 @@ const wordSearchContainer = {}
 const getArticle = document.getElementsByTagName('article')[0].innerHTML
 
 // Get the user input
-const userInput = document.getElementById("searchCriteria")
+let userInput = ""
+
+// (new RegExp('(' + searchText + ')', 'gi')
+let regExUserInput = ''
+
 
 // Find all matches within article
     
@@ -30,22 +34,22 @@ const userInput = document.getElementById("searchCriteria")
 document.getElementById("userSubmit").onclick = function(e) {
     e.preventDefault()
 
-    // ***************  change "nada" to userInput
-    const findMatch = [...getArticle.matchAll(userInput)]
+    userInput = document.getElementById("searchCriteria")
+
+    regExUserInput = new RegExp(userInput.value, 'gi')
 
     if(userInput.value === ""){
         alert("Please input a search criteria")
-    } else if(findMatch == 0){
-        alert("No matches found")
     } else {
-        executeMatchWord(findMatch)
+        executeMatchWord()
     }
 }
 
-const executeMatchWord = function (userWord) {
-    // ***************  change "nada" to userInput
-    const findMatch = [...getArticle.matchAll(userInput.value)]
 
+const executeMatchWord = function () {
+    // ***************  change "nada" to userInput
+    const findMatch = [...getArticle.matchAll(regExUserInput)]
+    
     // Save all the matched words in an array
     const matchedWords = []
     findMatch.forEach(function(match, index) {
@@ -111,6 +115,8 @@ const executeMatchWord = function (userWord) {
     // Update the article with the highlighted word
     document.querySelector('article').innerHTML = (preText + postText.join(""))
     
-    // Utilize RegEx for further search refinement
+    if(matchedWords.length == 0) {
+        alert("No matches found.")
+    }
 }
 
