@@ -1,3 +1,5 @@
+// Version 1.  Started on Nov 28 2019
+
 // MVP
 // search for a word.
 // find all instances of the word in the article.
